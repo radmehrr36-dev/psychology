@@ -8,8 +8,9 @@ import { viteSingleFile } from "vite-plugin-singlefile";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// https://vite.dev/config/
+// GitHub Pages serves this repository under /psychology/
 export default defineConfig({
+  base: "/psychology/",
   plugins: [react(), tailwindcss(), viteSingleFile()],
   resolve: {
     alias: {
